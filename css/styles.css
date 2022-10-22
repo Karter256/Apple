@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-background: #F5F5F7;
+    --color-dark: #0A0A0A;
+    --color-accent: #490E84;
+    --secondary-color: #717171;
+}
+
+html{
+    background-color: var(--color-background);
+    font-family: 'Inter', sans-serif;
+}
+body{
+    padding: 0 10px;
+}
+
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul,li,a{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1940px;
+    margin: 0 auto;
+}
+/* ____________________________Header__________________________ */
+
+.header{
+    max-height: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 113px;
+    background-color: var(--color-dark);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+.header__left {
+    display: flex;
+    width: 356px;
+    color: #717171;
+}
+.header__left-items+.header__left-items {
+    margin-left: 30px;
+}
+
+.header__left-links {
+}
+.apple_logo {
+}
