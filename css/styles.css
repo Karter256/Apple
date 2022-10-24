@@ -5,7 +5,7 @@
 }
 
 :root{
-    --color-background: #F5F5F7;
+    --color-background: #FFF;
     --color-dark: #0A0A0A;
     --color-accent: #490E84;
     --secondary-color: #717171;
@@ -29,7 +29,7 @@ ul{
     list-style: none;
 }
 
-ul,li,a{
+ul,li,a, p{
     margin: 0;
     padding: 0;
 }
@@ -38,18 +38,30 @@ ul,li,a{
     max-width: 1940px;
     margin: 0 auto;
 }
+
+.container__small{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
 /* ____________________________Header__________________________ */
 
 .header{
     max-height: 113px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     height: 113px;
     background-color: var(--color-dark);
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
+}
+.header__container-small{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .header__left {
@@ -69,6 +81,7 @@ ul,li,a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F5F5F7;
 }
 
 .main__heading {
@@ -90,6 +103,7 @@ ul,li,a{
     outline: none;
     border: none;
     background-color: var(--color-accent);
+    margin-bottom: 40px;
 }
 
 .main_btn-link{
@@ -98,4 +112,85 @@ ul,li,a{
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+}
+/* ______________________________New_______________________ */
+
+.new{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom: 150px;
+}
+
+.new__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    justify-content: center;
+}
+
+.new__heading {
+    margin-top: 87px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--secondary-color);
+}
+
+.new__text {
+    width: 560px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.new__text-bald {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.new__image{
+    margin: 36px 100px 50px 191px;
+}
+
+
+
+/* _________________________________Colour______________________________ */
+
+
+.colour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading__colour {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--secondary-color);
+}
+.colour__container {
+    display: flex;
+    gap: 80px;
+
+}
+.colour__badge-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.colour__badge-heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.colour__badge-purple {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
 }
