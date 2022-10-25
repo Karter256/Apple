@@ -61,6 +61,7 @@ ul,li,a, p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 
 }
 
@@ -263,4 +264,18 @@ color: var(--color-background);
     font-weight: 700;
     font-size: 14px;
     line-height: 130%;
+}
+/* __________________________________Footrer_______________________________ */
+.footer {
+    background-color: var(--color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+.container {
+}
+.container__small {
+}
+.footer__link {
 }
